@@ -16,6 +16,7 @@ $(function(){
             $(this).css('background-color', old_bg_color);
         }
     ).mouseup(function(){
+        // Set to editable and apply focus
         $(this).attr("contentEditable",true).focus();
     }).blur(function(){
         $(this).attr("contentEditable",false);        
