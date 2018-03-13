@@ -6,6 +6,7 @@ $(function(){
         cursor: "default",
     };
 
+    // Main flag for editing items
     $("H1, H2, H3, H4, H5, H6, P").hover(
         function(){
             old_bg_color = $(this).css('background-color');
