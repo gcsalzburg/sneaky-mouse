@@ -1,0 +1,30 @@
+{
+  "name": "Sneaky mouse",
+  "manifest_version": 2,
+  "version": "0.1",
+
+  "description": "Make sneaky edits to webpages then save a screenshot for future use!",
+  "icons": {
+    "16": "images/icon_16.png",
+    "32": "images/icon_32.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png" 
+  },
+
+  "browser_action": {
+    "default_icon": {                   
+      "16": "images/icon_16.png",       
+      "32": "images/icon_32.png"          
+    },
+    "default_title": "Sneaky Mouse"    
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
