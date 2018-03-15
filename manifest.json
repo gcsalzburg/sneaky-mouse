@@ -16,7 +16,8 @@
       "16": "images/icon_16.png",       
       "32": "images/icon_32.png"          
     },
-    "default_title": "Sneaky Mouse"    
+    "default_title": "Sneaky Mouse",
+    "default_popup": "popup.html"
   },
 
   "permissions": [

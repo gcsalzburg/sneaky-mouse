@@ -1,0 +1,90 @@
+body {
+    width: 260px;
+    background-color: #eee;
+    margin:5px 0;
+}
+
+label{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  height: 40px;
+  display: block;
+  float:        left;
+  line-height:  40px;
+}
+.cb + .toggle-btn {
+  width:          80px;
+  height:         40px;
+  border-radius:  50px;
+  display:        inline-block;
+  position:       relative;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyklEQVQ4T42TaxHCQAyENw5wAhLACVUAUkABOCkSwEkdhNmbpHNckzv689L98toIAKjqGcAFwElEFr5ln6ruAMwA7iLyFBM/TPDuQSrxwf6fCKBoX2UMIYGYkg8BLOnVg2RiAEexGaQQq4w9e9klcxGLLAUwgDAcihlYAR1IvZA1sz/+AAaQjXhTQQVoe2Yo3E7UQiT2ijeQdojRtClOfVKvMVyVpU594kZK9zzySWTlcNqZY9tjCsUds00+A57z1e35xzlzJjee8xf0HYp+cOZQUQAAAABJRU5ErkJggg==") no-repeat 50px center #0099cc;
+  cursor:         pointer;
+  transition:     background-color .40s ease-in-out;
+  transform:      scale(0.7);
+  float:          left;
+  clear:          both;
+}
+.cb + .toggle-btn:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -15px;
+  transition: all .30s ease-in-out;
+}
+.cb:checked + .toggle-btn{
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T6WT0RWDMAhFeZs4ipu0mawZpaO4yevBc6hUIWLNd+4NeQDk5sE/PMkZwFvZywKSTxF5iUgH0C4JHGyF97IggFVSqyCFga0CvQSg70Mdwd8QSSr4sGBMcgavAgdvwQCtApvA2uKr1x7Pu++06ItrF5LXPB/CP4M0kKTwYRIDyRAOR9lJTuF0F0hOAJbKopVHOZN9ACS0UgowIx8ZAAAAAElFTkSuQmCC") no-repeat 10px center #65cc02;
+}
+.cb:checked + .toggle-btn:after {
+  left: 45px;
+}
+.cb + .toggle-btn + label .on_off_txt:before{
+  content: "off";
+  display:inline-block;
+}
+.cb:checked + .toggle-btn + label .on_off_txt:before{
+  content: "on";
+}
+.cb {
+  position: absolute;
+  left: 10px;
+  right: 0;
+  width: 55px;
+  height: 32px;
+  opacity: 0;
+  z-index: 9;
+  cursor: pointer;
+}
+.cb:nth-of-type(2){
+  top:46px;
+}
+
+.screenshot_btn{
+  display: block;
+  float: left;
+  clear: both;
+  text-align: center;
+  background: #0099cc;
+  color: #fff;
+  height: 32px;
+  width: 240px;
+  margin: 10px 10px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  line-height: 32px;
+  transition:  background-color .20s ease-in-out;
+}
+.screenshot_btn:hover{
+  background: #65cc02;
+
+}
